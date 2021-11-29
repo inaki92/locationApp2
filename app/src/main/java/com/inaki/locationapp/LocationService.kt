@@ -65,6 +65,7 @@ class LocationService : Service() {
         Intent(baseContext, LocationReceiver::class.java).apply {
             return PendingIntent.getBroadcast(baseContext, 2, this, PendingIntent.FLAG_CANCEL_CURRENT)
         }
+
     }
 
     override fun onBind(intent: Intent?): IBinder? = null
